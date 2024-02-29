@@ -1,10 +1,12 @@
 #[macro_use]
 extern crate rocket;
+use rocket::{build, Build, Rocket};
 use rocket_dyn_templates::{context, Template};
+use shuttle_rocket::ShuttleRocket;
 
 #[shuttle_runtime::main]
-async fn main() -> shuttle_rocket::ShuttleRocket {
-    let rocket: rocket::Rocket<rocket::Build> = rocket::build()
+async fn main() -> ShuttleRocket {
+    let rocket: Rocket<Build> = build()
         .mount("/", routes![index])
         .attach(Template::fairing());
 
