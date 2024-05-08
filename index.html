@@ -1,0 +1,366 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="CLI diseñado para programadores" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://lym.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="lym" />
+    <meta property="og:description" content="CLI diseñado para programadores" />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/documents/6cdf5679-c84f-4c60-aa24-7e6575301de6.png?token=1gGTQGW_uqv6aambswCmA97HJ2azLKo0B2GS2IB6KXo&height=300&width=1200&expires=33245240050"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="lym.netlify.app" />
+    <meta property="twitter:url" content="https://lym.netlify.app/" />
+    <meta name="twitter:title" content="lym" />
+    <meta
+      name="twitter:description"
+      content="CLI diseñado para programadores"
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/documents/6cdf5679-c84f-4c60-aa24-7e6575301de6.png?token=1gGTQGW_uqv6aambswCmA97HJ2azLKo0B2GS2IB6KXo&height=300&width=1200&expires=33245240050"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dgs55s8qh/image/upload/v1708711896/ejvon98nvca4d3iallvg.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>lym CLI</title>
+  </head>
+
+  <body
+    class="w-full min-h-screen flex flex-col justify-start px-4 md:px-0 py-10 items-center bg-gradient-to-r from-slate-950 via-slate-800 to-slate-950 gap-y-10 relative"
+  >
+    <main class="w-full md:w-[650px] flex justify-start items-center gap-y-3">
+      <h1 class="text-2xl md:text-4xl text-gray-200 font-bold">
+        <span class="text-violet-400 text-3xl md:text-5xl">lym</span>: CLI
+        Toolkit
+      </h1>
+    </main>
+    <img
+      class="w-[55px] h-[40px] md:w-[90px] md:h-[70px] absolute opacity-20 bottom-2 left-2"
+      src="https://res.cloudinary.com/dgs55s8qh/image/upload/v1708707058/esu98yo1dlwtfjtiixyk.png"
+    />
+    <p class="text-gray-300 w-full md:w-[650px] text-start text-lg md:text-xl">
+      CLI diseñado para programadores
+      <a
+        href="https://github.com/gixilym/lym-cli/releases"
+        target="_blank"
+        class="text-violet-400 cursor-pointer hover:text-violet-300"
+        >v1.0.0</a
+      >
+    </p>
+
+    <div
+      class="w-full flex flex-col justify-center items-start md:items-center gap-y-10 mt-10"
+    >
+      <p
+        class="w-full md:w-[650px] text-gray-200 font-bold text-2xl md:text-3xl"
+      >
+        Instalación
+      </p>
+
+      <div class="flex flex-col justify-start items-start gap-y-2">
+        <p class="text-gray-300 text-lg md:text-xl font-semibold">Windows</p>
+
+        <ul
+          class="list-decimal relative w-full md:w-[650px] text-white rounded-lg border border-violet-300 py-2 px-8 bg-slate-800 space-y-1.5"
+        >
+          <li class="text-gray-200 text-md md:text-lg">
+            Descarga la última versión de lym
+            <a
+              href="https://github.com/gixilym/lym-cli/releases"
+              target="_blank"
+              class="text-blue-400 cursor-pointer hover:text-blue-300"
+              >aquí</a
+            >.
+          </li>
+          <li class="text-gray-200 text-md md:text-lg">
+            Para tener acceso global a lym tienes 2 opciones:
+            <ul class="list-disc pl-3">
+              <li class="text-gray-200 text-md md:text-lg">
+                <span class="text-green-300">Recomendado: </span>añadir la
+                ubicación de lym.exe al PATH del sistema.
+              </li>
+              <li class="text-gray-200 text-md md:text-lg">
+                <span class="text-red-400">No recomendado: </span>colocar
+                lym.exe dentro del directorio System32.
+              </li>
+            </ul>
+          </li>
+          <li class="text-gray-200 text-md md:text-lg">
+            Para actualizar lym repite el proceso eliminando la versión
+            anterior.
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-start items-start gap-y-2">
+        <p class="text-gray-300 text-lg md:text-xl font-semibold">
+          Linux (beta)
+        </p>
+
+        <ul
+          class="list-decimal relative w-full md:w-[650px] text-white rounded-lg border border-violet-300 py-2 px-8 bg-slate-800 space-y-1.5"
+        >
+          <li class="text-gray-200 text-md md:text-lg">
+            Descarga la última versión de lym
+            <a
+              href="https://github.com/gixilym/lym-cli/releases"
+              target="_blank"
+              class="text-blue-400 cursor-pointer hover:text-blue-300"
+              >aquí</a
+            >.
+          </li>
+          <li class="text-gray-200 text-md md:text-lg">
+            <p>Ejecuta en la terminal</p>
+
+            <p
+              class="w-full md:my-1.5 md:px-2 py-1.5 text-sm md:text-lg text-green-300 sm:bg-slate-900 rounded-lg relative"
+            >
+              >&nbsp;&nbsp;<span class="text-white">sudo</span
+              >&nbsp;&nbsp;cp&nbsp;&nbsp; <span class="text-violet-400">[</span
+              ><span class="text-violet-100">ruta-de-lym</span
+              ><span class="text-violet-400">]</span>&nbsp;&nbsp;&nbsp;<span
+                class="text-white"
+                >/usr/local/bin</span
+              >
+              <svg
+                onclick="navigator.clipboard.writeText('sudo cp ... /usr/local/bin');"
+                class="hidden sm:block absolute right-1 top-1 w-8 h-8 duration-75 hover:scale-95 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.5 16.5L19.5 4.5L18.75 3.75H9L8.25 4.5L8.25 7.5L5.25 7.5L4.5 8.25V20.25L5.25 21H15L15.75 20.25V17.25H18.75L19.5 16.5ZM15.75 15.75L15.75 8.25L15 7.5L9.75 7.5V5.25L18 5.25V15.75H15.75ZM6 9L14.25 9L14.25 19.5L6 19.5L6 9Z"
+                  fill="#c0c0c0"
+                ></path>
+              </svg>
+            </p>
+          </li>
+
+          <li class="text-gray-200 text-md md:text-lg">
+            Para actualizar lym repite el proceso eliminando la versión
+            anterior.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="w-full md:w-[650px] space-y-2 md:space-y-5 mt-10">
+      <h2
+        class="text-2xl md:text-3xl text-gray-300 font-bold tracking-tighter mb-3"
+      >
+        Uso
+      </h2>
+
+      <div
+        class="h-max w-full bg-slate-800 rounded-lg border border-violet-300 flex flex-col"
+      >
+        <div
+          class="flex justify-between items-center h-10 px-4 text-gray-200 bg-slate-900 rounded-t-lg"
+        >
+          <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <p>lymcli<span class="text-green-300">@</span>rust</p>
+          <div class="flex justify-center items-center">
+            <svg viewBox="0 0 24 24" fill="yellow" class="w-6 h-6">
+              <path
+                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="green" class="w-6 h-6">
+              <path
+                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="red" class="w-6 h-6">
+              <path
+                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="py-4 px-1 md:p-4 flex-1 overflow-auto">
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-white">
+              >&nbsp;&nbsp;lym
+              <span class="text-green-400">&nbsp;en&nbsp;&nbsp;</span>missing
+              initializer in const declaration
+            </p>
+          </div>
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-gray-300">
+              >&nbsp;&nbsp;falta inicializador en la declaración constante
+            </p>
+          </div>
+          <br />
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-white">
+              >&nbsp;&nbsp;lym&nbsp;&nbsp;<span class="text-green-400"
+                >es&nbsp;</span
+              >
+              no hay productos en el carrito
+            </p>
+          </div>
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-gray-300">>&nbsp;&nbsp;no products in the cart</p>
+          </div>
+          <br />
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-white">
+              >&nbsp;&nbsp;lym&nbsp;&nbsp;<span class="text-green-400"
+                >cal&nbsp;</span
+              >
+              &apos;(32 * 3)&nbsp;/&nbsp;2&apos;
+            </p>
+          </div>
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-gray-300">>&nbsp;48</p>
+          </div>
+          <br />
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-white">
+              >&nbsp;&nbsp;lym&nbsp;
+              <span class="text-green-400">time</span>
+            </p>
+          </div>
+          <div class="grid gap-1.5 text-sm md:text-lg">
+            <p class="text-gray-300">
+              >&nbsp;12:34:23&nbsp;&nbsp;-&nbsp;&nbsp;23/02/24
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full md:w-[650px] flex flex-col justify-start items-center gap-y-7 md:gap-y-4 mt-10"
+    >
+      <h2
+        class="text-2xl md:text-3xl text-gray-300 font-bold tracking-tighter w-full text-start mb-1"
+      >
+        Comandos
+      </h2>
+      <div
+        class="flex flex-col md:flex-row justify-start items-start md:items-center gap-y-2 gap-x-3 w-full"
+      >
+        <code
+          class="bg-slate-800 px-1.5 md:px-3 py-0.5 md:py-1 rounded-md text-sm md:text-lg text-white border border-violet-200"
+          >lym
+          <span class="text-green-300">en</span>
+          <span class="text-violet-200">[</span>texto<span
+            class="text-violet-200"
+            >]</span
+          >
+        </code>
+        <p class="text-gray-200 text-sm md:text-lg">
+          Traduce texto de inglés a español<span class="text-green-300">.</span>
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-start items-start md:items-center gap-y-2 gap-x-3 w-full"
+      >
+        <code
+          class="bg-slate-800 px-1.5 md:px-3 py-0.5 md:py-1 rounded-md text-sm md:text-lg text-white border border-violet-200"
+          >lym
+          <span class="text-green-300">es</span>
+          <span class="text-violet-200">[</span>texto<span
+            class="text-violet-200"
+            >]</span
+          >
+        </code>
+        <p class="text-gray-200 text-sm md:text-lg">
+          Traduce texto de español a inglés<span class="text-green-300">.</span>
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-start items-start md:items-center md:items-center gap-y-1 gap-x-3 w-full"
+      >
+        <code
+          class="bg-slate-800 px-1.5 md:px-3 py-0.5 md:py-1 rounded-md text-sm md:text-lg text-white border border-violet-200"
+          >lym
+          <span class="text-green-300">cal</span>
+          <span class="text-violet-200">&apos;[</span>expresión<span
+            class="text-violet-200"
+            >]&apos;</span
+          >
+        </code>
+        <p class="text-gray-200 text-sm md:text-lg">
+          Resuelve expresiones matemáticas<span class="text-green-300">.</span>
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-start items-start md:items-center gap-y-1 gap-x-3 w-full"
+      >
+        <code
+          class="bg-slate-800 px-1.5 md:px-3 py-0.5 md:py-1 rounded-md text-sm md:text-lg text-white border border-violet-200"
+          >lym <span class="text-green-300">time</span></code
+        >
+        <p class="text-gray-200 text-sm md:text-lg">
+          Devuelve la hora y fecha actual<span class="text-green-300">.</span>
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-start items-start md:items-center gap-y-2 gap-x-3 w-full"
+      >
+        <code
+          class="bg-slate-800 px-1.5 md:px-3 py-0.5 md:py-1 rounded-md text-sm md:text-lg text-white border border-violet-200"
+          >lym <span class="text-violet-200">[</span>comando<span
+            class="text-violet-200"
+            >]</span
+          >
+          <span class="text-green-300">--help</span>
+        </code>
+        <p class="text-gray-200 text-sm md:text-lg">
+          Obtén ayuda de ese comando en particular<span class="text-green-300"
+            >.</span
+          >
+        </p>
+      </div>
+
+      <div
+        class="flex justify-start items-center w-full text-sm md:text-lg opacity-70"
+      >
+        <p class="text-white">más comandos próximamente</p>
+        <span class="text-green-300">...</span>
+      </div>
+    </section>
+
+    <footer class="w-full mt-10 text-gray-200 text-center">
+      <a
+        rel="noreferrer"
+        href="https://gixi.me"
+        target="_blank"
+        className="text-slate-300 text-md sm:text-lg hover:text-white cursor-pointer w-full text-center"
+        title="gixi contacto"
+      >
+        Creado con ❤️ por
+        <u>gixi</u>
+      </a>
+    </footer>
+  </body>
+</html>
